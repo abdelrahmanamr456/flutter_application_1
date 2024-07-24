@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Abdelrahman Amr ',
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -28,10 +28,10 @@ class MyApp extends StatelessWidget {
         //
         // This works for code too, not just values: Most code changes can be
         // tested with just a hot reload.
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+      colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: 'Abdelrahman Amr'),
     );
   }
 }
@@ -54,41 +54,268 @@ class MyHomePage extends StatefulWidget {
   State<MyHomePage> createState() => _MyHomePageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
+class myHomePage extends StatefulWidget {
 
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
-
+  const myHomePage({super.key,required this.title});
+  final String title;
   @override
-  Widget build(BuildContext context) {
+  State<MyHomePage> createState() => _MyHomePageState();
+ 
+}
+class _FirstScreenWidgetState extends state>FirstScreenWidgetState>{
+@override
+Widget Build (BuildContext context){
+  return Scaffold()
+    backgroundColor: colors.blue,
+    body:
+    Container()
+      width:double.infinity
+      heigth:double.infinity
+      color: Colors.white,
+      child: Row()
+      MainAxisAlignment:MainAxisAlignment.spaceEvenly,
+      children:<widget>
+
+    Container(
+      width:double.infinity
+      heigth:double.infinity
+      color:Colors.white,
+      child: Text("we")
+    ),
+    Container(
+      width:double.infinity
+      heigth:double.infinity
+      color:Colors.white,
+      child: Text("love")
+  ),
+  Container(
+      width:double.infinity
+      heigth:double.infinity
+      color:Colors.white,
+      child: Text("flutter")
+      )
+}
+
+}
+
+class MyApp extends StatelessWidget{
+@override
+  Widget build (BuildContext context){
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text(widget.title),
-      ),
-      body: Center(
+      backgroundColor:Color.blue,
+      body:
+      Container(
+        width:double.infinity
+        heigth:double.infinity
+        color:Colors.blue,
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            const Text(
-              'You have pushed the button this many times:',
+          mainAxisAlignment:MainAxisAlignment.center,
+          children: [
+            Container(
+              width:double.infinity
+              heigth:double.infinity
+              color:Colors.red
             ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headlineMedium,
+            Container(
+              width:double.infinity
+              heigth:double.infinity
+              color:Colors.black
             ),
+             Container(
+              width:double.infinity
+              heigth:double.infinity
+              color:Colors.yellow
+            ),
+              Container(
+              width:double.infinity
+              heigth:double.infinity
+              color:Colors.white
+            ),
+              Container(
+              width:double.infinity
+              heigth:double.infinity
+              color:Colors.white
+            ),
+              Container(
+              width:double.infinity
+              heigth:double.infinity
+              color:Colors.white
+            ),
+             Container(
+              width:double.infinity
+              heigth:double.infinity
+              color:Colors.teal
+            ),
+             Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Container()
+                  width:double.infinity
+                  heigth:double.infinity
+                  color: Colors.green
+                 
+                ),
+                Container()
+                  width:double.infinity
+                  heigth:double.infinity
+                   color: Colors.orange
+                  
+                ),
+                Container()
+                  width:double.infinity
+                  heigth:double.infinity
+                   color: Colors.orange
+                  
+              
+            ),
+           
+
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+
+  },
+
+},
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+  return MaterialApp(
+  home: Scaffold(
+  backgroundColor: Colors.blue,
+   body: Center(
+    child: Row(
+    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+    children: [
+    Column(
+       mainAxisAlignment: MainAxisAlignment.center,
+       children: [
+    Container(
+       color: Colors.white,
+       padding: EdgeInsets.all(16.0),
+       child: Column(
+       children: [
+         Text(
+              'The More You Practice .. The Less You Fail',
+               textAlign: TextAlign.center,
+               style: TextStyle(fontSize: 18),
+
+                ),
+                   SizedBox(height: 20),
+                    Row(
+                   mainAxisAlignment: MainAxisAlignment.center,
+                     children: [
+                       ElevatedButton(
+                         onPressed: () {},
+                         child: Text('Agree'),
+                         style: ElevatedButton.styleFrom(
+                           primary: Colors.white,
+                            onPrimary: Colors.black,
+                         ),
+                            ),
+                            SizedBox(width: 10),
+                            ElevatedButton(
+                              onPressed: () {},
+                              child: Text('do not agree'),
+                              style: ElevatedButton.styleFrom(
+                                primary: Colors.white,
+                                onPrimary: Colors.black,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                 Container(
+                  color: Colors.white,
+                   padding: EdgeInsets.all(16.0),
+                   child: Column(
+                     children: [
+                       Text(
+                        'Code</> Eat🍴 sleep🛌 Repeat🔁',
+                        textAlign: TextAlign.center,
+                         style: TextStyle(fontSize: 18),
+                        ),
+                       SizedBox(height: 20),
+                       Row(
+                         mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                            ElevatedButton(
+                              onPressed: () {},
+                              child: Text('Agree'),
+                              style: ElevatedButton.styleFrom(
+                                primary: Colors.white,
+                                onPrimary: Colors.black,
+                              ),
+                            ),
+                            SizedBox(width: 10),
+                            ElevatedButton(
+                              onPressed: () {},
+                              child: Text('do not agree'),
+                              style: ElevatedButton.styleFrom(
+                                primary: Colors.white,
+                                onPrimary: Colors.black,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                   color: Colors.white,
+                   padding: EdgeInsets.all(16.0),
+                   child: Column(
+                    children: [
+                        Text(
+                         'The More You Fail .. The More You Learn',
+                         textAlign: TextAlign.center,
+                         style: TextStyle(fontSize: 18),
+                        ),
+                        SizedBox(height: 20),
+                        Row(
+                         mainAxisAlignment: MainAxisAlignment.center,
+                         children: [
+                          ElevatedButton(
+                            onPressed: () {},
+                             child: Text('Agree'),
+                             style: ElevatedButton.styleFrom(
+                             primary: Colors.white,
+                             onPrimary: Colors.black,
+                              ),
+                            ),
+                            SizedBox(width: 10),
+                            ElevatedButton(
+                            onPressed: () {},
+                             child: Text('do not agree'),
+                             style: ElevatedButton.styleFrom(
+                               primary: Colors.white,
+                             onPrimary: Colors.black,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ],
+          ),
+        ),
+      ),
     );
   }
 }
